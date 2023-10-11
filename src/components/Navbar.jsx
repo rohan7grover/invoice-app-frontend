@@ -59,31 +59,31 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    <Language>EN</Language>
-                    <SearchContainer>
-                        <Input placeholder="Search" />
-                        <Search style={{ color: "gray", fontSize: 16 }} />
-                    </SearchContainer>
-                </Left>
-                <Center>
-                    <Logo>PaperlessPay</Logo>
-                </Center>
-                <Right>
-                    <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
-                    <MenuItem>
-                        <Badge badgeContent={4} color="primary">
-                            <ShoppingCartCheckoutOutlined />
-                        </Badge>
-                    </MenuItem>
-                </Right>
-            </Wrapper>
-        </Container>
-    );
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input placeholder="Search" />
+            <Search style={{ color: "gray", fontSize: 16 }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>PaperlessPay</Logo>
+        </Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartCheckoutOutlined />
+            </Badge>
+          </MenuItem>
+        </Right>
+      </Wrapper>
+    </Container>
+  );
 };
 
 export default Navbar;
